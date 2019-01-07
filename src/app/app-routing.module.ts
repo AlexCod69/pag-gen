@@ -5,7 +5,7 @@ import { ItemVideoComponent } from './pages/item-video/item-video.component';
 
 const app_routes: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'itemVideo', component: ItemVideoComponent },
+    { path: 'itemVideo/:id', component: ItemVideoComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

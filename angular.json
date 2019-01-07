@@ -25,7 +25,27 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery/jquery.js",
+              "src/assets/js/jquery/jquery-migrate.min.js",
+              "src/assets/js/front.scrollbar.js",
+              "src/assets/js/front.owl.js",
+              "src/assets/js/front.tabs.js",
+              "src/assets/js/front.repeater.js",
+              "src/assets/js/front.gallery.js",
+              "src/assets/js/front.ajax.js",
+              "src/assets/js/front.raty.js",
+              "src/assets/js/front.ratings.js",
+
+              "src/assets/js/front.scripts.js",
+              "src/assets/wp-includes/js/comment-reply.min.js",
+              "src/assets/js/front.livesearch.js",
+              "src/assets/js/jquery.lazyloadxt.extra.min.js",
+              "src/assets/js/jquery.lazyloadxt.srcset.min.js",
+              "src/assets/js/jquery.lazyloadxt.extend.js",
+              "src/assets/layered-popups/js/script.min.js"
+
+            ]
           },
           "configurations": {
             "production": {

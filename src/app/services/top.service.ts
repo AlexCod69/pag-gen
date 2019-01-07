@@ -1,0 +1,134 @@
+import { Injectable } from '@angular/core';
+import { TopInterface } from '../interfaces/top.interface';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class TopService {
+  cargando = true;
+  Titulo1 = '';
+  Titulo2 = '';
+  Titulo3 = '';
+  Titulo4 = '';
+  Titulo5 = '';
+  Titulo6 = '';
+  Titulo7 = '';
+  Titulo8 = '';
+  Titulo9 = '';
+  Titulo10 = '';
+  Titulo11 = '';
+  Titulo12 = '';
+  Titulo13 = '';
+  Titulo14 = '';
+  Fecha1 = '';
+  Fecha2 = '';
+  Fecha3 = '';
+  Fecha4 = '';
+  Fecha5 = '';
+  Fecha6 = '';
+  Fecha7 = '';
+  Fecha8 = '';
+  Fecha9 = '';
+  Fecha10 = '';
+  Fecha11 = '';
+  Fecha12 = '';
+  Fecha13 = '';
+  Fecha14 = '';
+  Img1 = '';
+  Img2 = '';
+  Img3 = '';
+  Img4 = '';
+  Img5 = '';
+  Img6 = '';
+  Img7 = '';
+  Img8 = '';
+  Img9 = '';
+  Img10 = '';
+  Img11 = '';
+  Img12 = '';
+  Img13 = '';
+  Img14 = '';
+  Cod1 = '';
+  Cod2 = '';
+  Cod3 = '';
+  Cod4 = '';
+  Cod5 = '';
+  Cod6 = '';
+  Cod7 = '';
+  Cod8 = '';
+  Cod9 = '';
+  Cod10 = '';
+  Cod11 = '';
+  Cod12 = '';
+  Cod13 = '';
+  Cod14 = '';
+  tops: TopInterface[] = [];
+  constructor(private http: HttpClient) {
+    this.cargarTop();
+  }
+  private cargarTop() {
+    this.http.get('https://paggen-f2921.firebaseio.com/AKJ/Top.json')
+    .subscribe( (resp: TopInterface[]) => {
+      this.tops = resp;
+      this.Titulo1 = this.tops[0].Titulo;
+      this.Titulo2 = this.tops[1].Titulo;
+      this.Titulo3 = this.tops[2].Titulo;
+      this.Titulo4 = this.tops[3].Titulo;
+      this.Titulo5 = this.tops[4].Titulo;
+      this.Titulo6 = this.tops[5].Titulo;
+      this.Titulo7 = this.tops[6].Titulo;
+      this.Titulo8 = this.tops[7].Titulo;
+      this.Titulo9 = this.tops[8].Titulo;
+      this.Titulo10 = this.tops[9].Titulo;
+      this.Titulo11 = this.tops[10].Titulo;
+      this.Titulo12 = this.tops[11].Titulo;
+      this.Titulo13 = this.tops[12].Titulo;
+      this.Titulo14 = this.tops[13].Titulo;
+      this.Fecha1 = this.tops[0].Fecha;
+      this.Fecha2 = this.tops[1].Fecha;
+      this.Fecha3 = this.tops[2].Fecha;
+      this.Fecha4 = this.tops[3].Fecha;
+      this.Fecha5 = this.tops[4].Fecha;
+      this.Fecha6 = this.tops[5].Fecha;
+      this.Fecha7 = this.tops[6].Fecha;
+      this.Fecha8 = this.tops[7].Fecha;
+      this.Fecha9 = this.tops[8].Fecha;
+      this.Fecha10 = this.tops[9].Fecha;
+      this.Fecha11 = this.tops[10].Fecha;
+      this.Fecha12 = this.tops[11].Fecha;
+      this.Fecha13 = this.tops[12].Fecha;
+      this.Fecha14 = this.tops[13].Fecha;
+      this.Img1 = this.tops[0].Img;
+      this.Img2 = this.tops[1].Img;
+      this.Img3 = this.tops[2].Img;
+      this.Img4 = this.tops[3].Img;
+      this.Img5 = this.tops[4].Img;
+      this.Img6 = this.tops[5].Img;
+      this.Img7 = this.tops[6].Img;
+      this.Img8 = this.tops[7].Img;
+      this.Img9 = this.tops[8].Img;
+      this.Img10 = this.tops[9].Img;
+      this.Img11 = this.tops[10].Img;
+      this.Img12 = this.tops[11].Img;
+      this.Img13 = this.tops[12].Img;
+      this.Img14 = this.tops[13].Img;
+      this.Cod1 = this.tops[0].Cod;
+      this.Cod2 = this.tops[1].Cod;
+      this.Cod3 = this.tops[2].Cod;
+      this.Cod4 = this.tops[3].Cod;
+      this.Cod5 = this.tops[4].Cod;
+      this.Cod6 = this.tops[5].Cod;
+      this.Cod7 = this.tops[6].Cod;
+      this.Cod8 = this.tops[7].Cod;
+      this.Cod9 = this.tops[8].Cod;
+      this.Cod10 = this.tops[9].Cod;
+      this.Cod11 = this.tops[10].Cod;
+      this.Cod12 = this.tops[11].Cod;
+      this.Cod13 = this.tops[12].Cod;
+      this.Cod14 = this.tops[13].Cod;
+     // console.log(this.Titulo1);
+      this.cargando = false;
+    });
+  }
+}
